@@ -4,21 +4,15 @@ The PHP Directory Listing Script is a highly configurable script, allowing you t
 
 Features Include:
 
--Full mobile browser support.
+* Full mobile browser support.
+* The ability to upload multiple files and restrict the allowed file-types.
+* Support for restricting access to the script by either password or IP Address whitelisting (ideal if you want only yourself and clients to have access!).
+* Support for creating new directories and sub-directories.
+* Upload zip files and extract them automatically, with the option to delete the zip file after it’s been extracted.
+* Optionally hide certain file types, names or extensions, as well as directories.
+* Sort file listings by name, size or last modified date.
 
--The ability to upload multiple files and restrict the allowed file-types.
-
--Support for restricting access to the script by either password or IP Address whitelisting (ideal if you want only yourself and clients to have access!).
-
--Support for creating new directories and sub-directories.
-
--Upload zip files and extract them automatically, with the option to delete the zip file after it’s been extracted.
-
--Optionally hide certain file types, names or extensions, as well as directories.
-
--Sort file listings by name, size or last modified date.
-
-All of the new features can be enabled and disabled individually, so whether you’re looking for a full file manager, or a simple list of downloads, the PHP Directory Listing script has you covered.
+All of the features can be enabled and disabled individually, so whether you’re looking for a full file manager, or a simple list of downloads, the PHP Directory Listing script has you covered.
 
 **System Requirements**
 
