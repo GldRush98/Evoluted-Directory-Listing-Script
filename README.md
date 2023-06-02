@@ -2,7 +2,7 @@
 
 The PHP Directory Listing Script is a highly configurable script, allowing you to simply upload one file into a web-accessible directory, and it’ll be turned into a well formatted, mobile friendly directory browser.
 
-Features Include:
+## Features ##
 
 * Full mobile browser support.
 * The ability to upload multiple files and restrict the allowed file-types.
@@ -14,7 +14,7 @@ Features Include:
 
 All of the features can be enabled and disabled individually, so whether you’re looking for a full file manager, or a simple list of downloads, the PHP Directory Listing script has you covered.
 
-**System Requirements**
+## System Requirements ##
 
 You will need to be running at least PHP 7.1 (tested up through 8.2) and GD2 library is still required. Optionally, if you wish to enable the unzip support, you’ll also need the ZipArchive php extension installed.
 
