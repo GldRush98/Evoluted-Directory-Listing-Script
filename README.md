@@ -18,5 +18,8 @@ All of the features can be enabled and disabled individually, so whether you’r
 
 You will need to be running at least PHP 7.1 (tested up through 8.2) and GD2 library is still required. Optionally, if you wish to enable the unzip support, you’ll also need the ZipArchive php extension installed.
 
-
-*Note: I am not the author of this script, this is a mirror of a very useful script that is difficult to find elsewhere on the web.
+### Notes ###
+* I have made 2 minor changes:
+  * The file listing sorting was changed to a more human-friendly order over the machine order php provides by default.
+  * Embedded icons were added for .7z and .mkv files. 
+* I am not the author of this script, this is a mirror of a very useful script that is difficult to find elsewhere on the web.
