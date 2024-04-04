@@ -24,4 +24,5 @@ You will need to be running at least PHP 7.1 (tested up through 8.2) and GD2 lib
   * The filter was fixed to work in subdirectories as well now.
   * Embedded icons were added for .7z and .mkv files. 
   * Some small CSS changes to better handle long file names.
+  * Added a setting to show or hide the filter form.
 * I am not the author of this script, this is a mirror of a very useful script that is difficult to find elsewhere on the web.
