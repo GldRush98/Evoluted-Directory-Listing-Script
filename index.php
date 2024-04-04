@@ -9,10 +9,9 @@ class DirectoryListing {
 
 	SYSTEM REQUIREMENTS
 	=====================================================================================================
-	This script requires a PHP version 7.1 along with the GD library if you wish to use 
+	This script requires PHP version 7.1 along with the GD library if you wish to use 
 	the thumbnail/image preview functionality. For (optional) unzip functionality, you'll 
 	need the ZipArchive php extension.
-	
 
 	HOW TO USE
 	=====================================================================================================
@@ -152,6 +151,9 @@ class DirectoryListing {
 
 	// Works the same way as $ignoreDotFiles but with directories.
 	public $ignoreDotDirectories = true;
+	
+	// Sets whether the filter form is shown to the user
+	public $enableFilterForm = true;
 
 	/*
 	====================================================================================================
@@ -3687,14 +3689,19 @@ a:focus {
 			if (isset($_GET['dir']))
 			{
 				$current_dir = $_GET['dir'];
-			} ?>
+			}
+			if ($listing->enableFilterForm)
+			{
+			?>
 			<form action="<?=$form_action?>" method="get" class="form-inline">
 				<div class="form-group">
 					<input type="text" name="filter" id="filter" class="form-control" value="<?= $listing->filterBy; ?>">
 					<button type="submit" class="btn btn-primary">Filter</button>
 				</div>
 			</form>
-			<?php if (!empty($data['files'])): ?>
+			<?php 
+			}
+			if (!empty($data['files'])): ?>
 				<div class="row">
 					<div class="col-xs-12">
 						<div class="table-container">
