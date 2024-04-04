@@ -234,7 +234,7 @@ class DirectoryListing {
 	 */
 	public function login(): void
 	{
-		$password = filter_var($_POST['password'], FILTER_SANITIZE_STRING);
+		$password = htmlspecialchars($_POST['password']);
 
 		if ($password === $this->password) {
 			$_SESSION['evdir_loggedin'] = true;
@@ -3692,6 +3692,10 @@ a:focus {
 			}
 			if ($listing->enableFilterForm)
 			{
+				if (!isset($form_action))
+				{
+					$form_action = $_SERVER['PHP_SELF'];
+				}	
 			?>
 			<form action="<?=$form_action?>" method="get" class="form-inline">
 				<div class="form-group">
